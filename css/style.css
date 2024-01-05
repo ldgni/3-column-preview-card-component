@@ -1,0 +1,151 @@
+:root {
+  --clr-bg: #f2f2f2;
+  --clr-sedans: #e28625;
+  --clr-suvs: #006971;
+  --clr-luxury: #004140;
+  --clr-heading: #f2f2f2;
+  --clr-text: #fff;
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", sans-serif;
+  --fs-base: 0.9375rem;
+  --fw-base: 400;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../assets/fonts/LexendDeca-Regular.woff2") format("woff2"),
+    url("../assets/fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("../assets/fonts/BigShouldersDisplay-Bold.woff2") format("woff2"),
+    url("../assets/fonts/BigShouldersDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+/* GENERAL */
+
+body {
+  background-color: var(--clr-bg);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--clr-text);
+  padding: 5.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* MAIN */
+
+main {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 57.5rem;
+}
+
+.vehicle {
+  padding: 3rem;
+}
+
+.vehicle__icon {
+  margin-bottom: 2.19rem;
+}
+
+.vehicle__title {
+  font-family: var(--ff-secondary);
+  color: var(--clr-heading);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1.56rem;
+}
+
+.vehicle__text {
+  line-height: 1.5625rem;
+  opacity: 0.75;
+  margin-bottom: 1.56rem;
+}
+
+.btn {
+  background-color: #f2f2f2;
+  border-radius: 1.5625rem;
+  border: 2px solid #fff;
+  line-height: 1.5625rem;
+  padding: 0.72rem 1.97rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.vehicle--sedans {
+  background-color: var(--clr-sedans);
+}
+
+.btn--sedans {
+  color: var(--clr-sedans);
+}
+
+.vehicle--suvs {
+  background-color: var(--clr-suvs);
+}
+
+.btn--suvs {
+  color: var(--clr-suvs);
+}
+
+.vehicle--luxury {
+  background-color: var(--clr-luxury);
+}
+
+.btn--luxury {
+  color: var(--clr-luxury);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 50rem) {
+  main {
+    display: flex;
+  }
+
+  .vehicle__text {
+    margin-bottom: 5.19rem;
+  }
+}
