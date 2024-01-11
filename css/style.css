@@ -36,6 +36,7 @@ main {
 @media (min-width: 48rem) {
   main {
     display: flex;
+    margin: 1rem;
   }
 }
 
