@@ -46,15 +46,15 @@ main {
 }
 
 .card--sedans {
-  background-color: #e28625;
+  background-color: #485c14;
 }
 
 .card--suvs {
-  background-color: #006971;
+  background-color: #5e2235;
 }
 
 .card--luxury {
-  background-color: #004140;
+  background-color: #3e4aad;
 }
 
 .card__icon {
@@ -95,13 +95,13 @@ main {
 }
 
 .card__btn--sedans {
-  color: #e28625;
+  color: #485c14;
 }
 
 .card__btn--suvs {
-  color: #006971;
+  color: #5e2235;
 }
 
 .card__btn--luxury {
-  color: #004140;
+  color: #3e4aad;
 }
