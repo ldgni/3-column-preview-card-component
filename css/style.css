@@ -89,7 +89,7 @@ main {
   transition: background-color 0.3s, color 0.3s ease-in-out;
 }
 
-.card__btn:hover {
+.card__btn:is(:hover, :focus) {
   background-color: transparent;
   color: #fff;
 }
