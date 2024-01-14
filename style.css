@@ -1,3 +1,31 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 /* GENERAL */
 
 body {
@@ -86,7 +114,7 @@ main {
   border: 2px solid #fff;
   padding: 0.72rem 1.97rem;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s ease-in-out;
+  transition: background-color 0.2s, color 0.2s ease-in-out;
 }
 
 .card__btn:is(:hover, :focus) {
